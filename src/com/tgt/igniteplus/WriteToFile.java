@@ -1,8 +1,7 @@
 package com.tgt.igniteplus;
 
 import java.io.*;
-import java.io.File;
-import java.io.IOException;
+
 public class WriteToFile {
 
         public  static  void main(String[] args){

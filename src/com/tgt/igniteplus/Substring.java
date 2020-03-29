@@ -11,20 +11,20 @@ public class Substring {
             Scanner in=new Scanner(System.in);
             System.out.println("String 1 : ");
             str1=in.nextLine();
-            System.out.println("String 2 : ");
+            System.out.println("pattern string : ");
             str2=in.nextLine();
-            int s1Len=str1.length(),s2Len=str2.length();
+            int str1Len=str1.length(),str2Len=str2.length();
 
-        System.out.println(s1Len-s2Len);
+        System.out.println(str1Len-str2Len);
 
-            for (int i=0;i<=s1Len-s2Len;i++){
+            for (int i=0;i<=str1Len-str2Len;i++){
                 int j;
-                for (j=0; j <s2Len ; j++) {
+                for (j=0; j <str2Len ; j++) {
                     if(str1.charAt(i+j)!=str2.charAt(j))
                         break;
 
                 }
-                if(j==s2Len)
+                if(j==str2Len)
                     System.out.println("pattern found at pos : "+(i+1));
             }
     }
@@ -32,7 +32,7 @@ public class Substring {
 /*
 String 1 :
 abchfabc
-String 2 :
+pattern string :
 abc
 5
 pattern found at pos : 1

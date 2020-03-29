@@ -3,7 +3,7 @@ package com.tgt.igniteplus;
 import java.util.Scanner;
 //check if a number is a perfect square
 public class PerfectSquare {
-   static Boolean perfect_Square(int n){
+   static Boolean perfectSquare(int n){
        System.out.println(Math.sqrt(n));
         if (Math.sqrt(n)==(int)Math.sqrt(n))
         return true;
@@ -15,7 +15,7 @@ public class PerfectSquare {
         int n;
         Scanner in=new Scanner(System.in);
         n=in.nextInt();
-        if(perfect_Square(n))
+        if(perfectSquare(n))
         System.out.println(n+" is perfect square");
         else
             System.out.println(n+" is not perfect square");

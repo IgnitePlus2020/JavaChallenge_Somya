@@ -2,8 +2,9 @@ package com.tgt.igniteplus;
 
 /*
 hashing
-if first occurrence:inc
-if second occurrence:inc print
+if first occurrence:increase
+if second occurrence:increase print
+any more occurrences: continue;
  */
 import java.util.Scanner;
 

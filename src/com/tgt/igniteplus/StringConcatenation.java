@@ -2,7 +2,7 @@ package com.tgt.igniteplus;
 
 import java.util.Scanner;
 
-public class ConcatenateStrings {
+public class StringConcatenation {
 
 /*
 + operator concatenates two strings

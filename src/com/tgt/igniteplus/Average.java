@@ -5,13 +5,13 @@ import java.util.Scanner;
 average =sum_of_elements/no_of_elements
  */
 public class Average {
-    static float Average(float[] ele,int n){
-        float avg=0,sum=0;
+    static float average(float[] elements,int n){
+        float average=0,sum=0;
         for(int i=0;i<n;i++) {
-            avg +=( ele[i])/n;
+            average +=( elements[i])/n;
         }
-      //  avg=sum/n;
-        return avg;
+      //  average=sum/n;
+        return average;
     }
     //DRIVER CODE
     public static void  main(String [] args){
@@ -26,15 +26,9 @@ public class Average {
         for(i=0;i<n;i++)    elements[i] = in.nextFloat();
 
 
-        System.out.println("Average=" + Average(elements,n));
+        System.out.println("Average=" + average(elements,n));
     }
 }
 /*
-Enter the numbers of elements
-3
-Enter the Array elements
-10.3
-7.9
-8.8
-Average=9.0
+elements
  */

@@ -1,14 +1,20 @@
 package com.tgt.igniteplus;
+
+import java.util.Scanner;
+
 /*
 reference: https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
  */
 public class Permutations {
     public static void main(String[] args)
     {
-        String str = "GOD";
-        int strlen = str.length();
+        Scanner in=new Scanner(System.in);
+        String str;
+        System.out.print("enter String : ");
+        str=in.nextLine();
+        int stringLength= str.length();
 
-        permute(str, 0, strlen - 1);
+        permute(str, 0, stringLength - 1);
     }
 
 
@@ -28,22 +34,22 @@ public class Permutations {
     }
 
 
-    public static String swap(String s, int i, int j)
+    public static String swap(String string, int i, int j)
     {
         char temp;
-        char[] c = s.toCharArray();
-        temp = c[i];
-        c[i] = c[j];
-        c[j] = temp;
-        return String.valueOf(c);
+        char[] characterArray = string.toCharArray();
+        temp = characterArray[i];
+        characterArray[i] = characterArray[j];
+        characterArray[j] = temp;
+        return String.valueOf(characterArray);
     }
 }
 /*
+enter String : GOD
 GOD
 GDO
 OGD
 ODG
 DOG
 DGO
-
  */

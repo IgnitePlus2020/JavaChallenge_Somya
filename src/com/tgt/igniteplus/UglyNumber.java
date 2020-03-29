@@ -3,7 +3,7 @@ package com.tgt.igniteplus;
 import java.util.Scanner;
 
 public class UglyNumber {
-    public static Boolean uglyNum(int num){
+    public static Boolean uglyNumber(int num){
         while(num%2==0)
             num/=2;
         while(num%3==0)
@@ -18,7 +18,7 @@ public class UglyNumber {
         Scanner in=new Scanner(System.in);
         num=in.nextInt();
 
-        if (uglyNum(num))
+        if (uglyNumber(num))
             System.out.println(num+" is an ugly number");
         else  System.out.println(num+ " is not an ugly number");
 

@@ -12,7 +12,7 @@ else :
 not_leap_year
  */
 public class LeapYear {
-    static Boolean LeapYear(int year){
+    static Boolean leapYear(int year){
         if (year % 400 == 0)
             return true;
 
@@ -28,7 +28,7 @@ public class LeapYear {
         int year;
         Scanner in=new Scanner(System.in);
         year=in.nextInt();
-        if(LeapYear(year))
+        if(leapYear(year))
             System.out.println(year+" is leap year");
         else
             System.out.println(year+" is not leap year");
